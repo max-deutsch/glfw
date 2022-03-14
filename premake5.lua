@@ -1,7 +1,7 @@
 project "GLFW"
     kind "StaticLib"
     language "C"
-    
+
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -21,7 +21,7 @@ project "GLFW"
 		"src/null_monitor.c",
 		"src/null_window.c",
 
-        "src/platform.c"
+        "src/platform.c",
         "src/vulkan.c",
         "src/window.c"
     }
